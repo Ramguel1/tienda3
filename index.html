@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Abarrotes Furcio</title>
+</head>
+<body class="text-center" onload="cargarProductos();">
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid text-center">
+            <h1 class=" navbar-brand m-auto">Abarrotes Furcio</h1>
+        </div>
+    </nav>
+
+    <div class="container-fluid w-75 m-auto">
+<div class="card text-center mt-4">
+    <div class="card-header">
+        <img src="tiendal.png" alt="" height="40px">
+    </div>
+    <div class="card-body">
+        <table class="table w-50 m-auto">
+<tr>
+    <td>
+        <h2>Producto</h2>
+    </td>
+    <td>
+        <h2>Imagen</h2>
+    </td>
+    <td>
+        <h2>Precio</h2>
+    </td>
+
+<td>
+    <h2>Cantidad</h2>
+</td>
+<td>
+    <h2>Agregar</h2>
+</td>
+</tr>
+<tr> 
+    <td class="align-midle">
+    <select name="producto" id="productos" class="form-control">
+    </select>
+</td>
+<td class="align-midle">
+    <img src="tiendal.png" alt="" id="imgProducto" height="80px">
+</td>
+<td class="align-midle"><h1 id="precioProducto">$0</h1></td>
+<td class="align-midle">
+    <h1 id="vcantidad">1</h1>
+    <input type="range" min="1" max="10" value="1" class="form-control" id="inputCantidad">
+</td>
+<td class="align-midle">
+    <button class="btn btn-danger" id="agregarCarrito">Agregar</button>
+</td>
+</tr>
+</table>
+<div id="carrito"></div>
+    </div>
+    <div class="card-footer text-body-secondary">
+        Ramses Uriel
+    </div>
+</div>
+
+    </div>
+
+    
+       
+<script src="sweetalert2.all.min.js"></script>
+        <script src="app.js"></script>
+        
+    </body>
+   
+</body>
+</html>
